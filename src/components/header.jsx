@@ -8,24 +8,24 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#fefefe] w-full text-white p-4">
+    <header className="bg-[#fefefe] shadow-md w-full text-[#4396A2] poppins-medium p-4 lg:px-[50px]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="lg:ml-[50px] ml-0 text-2xl font-bold">
+        <div className="ml-0 text-2xl font-bold w-[15%]">
           <a href="/">
             <img
               src={logo}
               alt=""
-              className="w-[30%] h-[10%px]"
+              className="h-8"
             />
           </a>
         </div>
-        <div className="hidden lg:flex items-center mr-[20%]">
-          <ul className="flex ">
+        <div className="hidden lg:flex items-center">
+          <ul className="flex">
             <li>
               <a
                 href="#home"
-                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Home
               </a>
@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <a
                 href="#about"
-                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 About
               </a>
@@ -41,31 +41,23 @@ const Header = () => {
             <li>
               <a
                 href="#sevents"
-                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
-                Events
+                Departments
               </a>
             </li>
             <li>
               <a
                 href="#sachievements"
-                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
-                Achievers
+                Services
               </a>
             </li>
             <li>
               <a
                 href="#partner"
-                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
-              >
-                Partners
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="p-4 font-maven uppercase transition-all hover:text-[#df0000] cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Contacts
               </a>
