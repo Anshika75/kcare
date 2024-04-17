@@ -16,7 +16,7 @@ const Header = () => {
             <img
               src={logo}
               alt=""
-              className="h-8"
+              className=" h-6 lg:h-8"
             />
           </a>
         </div>
