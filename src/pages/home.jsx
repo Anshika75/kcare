@@ -4,7 +4,7 @@ import Header from '../components/header'
 export default function Home() {
   return (
    <>
-    <div className="flex flex-col items-center justify-start w-full min-h-screen">
+    <div className="flex flex-col items-center justify-start w-full min-h-screen bg-[#4396A2]">
       <Header/>
     </div>
    </>
