@@ -125,4 +125,8 @@
   background-color: #92e3ef;
 }
 
-@media 
+@media (max-width: 640px) {
+  .swiper-button-next, .swiper-button-prev {
+    opacity: 0;
+  }
+}
