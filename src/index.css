@@ -120,3 +120,7 @@
 .swiper-button-next:hover, .swiper-button-prev:hover {
   color: #92e3ef;
 }
+
+.swiper-pagination-bullet {
+  background-color: #92e3ef;
+}
