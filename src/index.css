@@ -114,5 +114,9 @@
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: red;
+  color: #fefefe;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #92e3ef;
 }
