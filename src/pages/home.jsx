@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 import Landing from '../components/landing'
 import Stats from '../components/stats'
+import About from '../components/about'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header/>
       <Landing/>
       <Stats/>
+      <About/>
     </div>
    </>
   )
