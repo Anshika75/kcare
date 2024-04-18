@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 export default function Lannding() {
   return (
@@ -18,6 +18,10 @@ export default function Lannding() {
       <Swiper
         spaceBetween={30}
         effect={'fade'}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation={true}
         pagination={{ clickable: 'true', bulletColor: '#92e3ef', bulletActiveColor: '#4396A2' }} 
         modules={[EffectFade, Navigation, Pagination]}
