@@ -1,5 +1,9 @@
 import React, { useRef, useState } from 'react';
 import home_banner from '../assets/home_banner.png'
+import slide1 from '../assets/slide1.jpeg'
+import slide2 from '../assets/slide2.jpeg'
+import slide3 from '../assets/slide3.jpeg'
+import slide4 from '../assets/slide4.jpeg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -23,19 +27,22 @@ export default function Lannding() {
         navigation={true}
         pagination={{ clickable: 'true', bulletColor: '#92e3ef', bulletActiveColor: '#4396A2' }} 
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
-        className="mySwiper w-full h-[35vh] mt-4 lg:mt-0 lg:h-[100vh]"
+        className="mySwiper w-full h-[35vh] mt-4 lg:mt-0 lg:h-[120vh]"
       >
         <SwiperSlide>
-          <img src={home_banner}/>
+          <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={home_banner}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={slide1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={slide2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={slide3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={slide4} />
         </SwiperSlide>
       </Swiper>
     </>
