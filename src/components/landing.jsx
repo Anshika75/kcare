@@ -19,9 +19,7 @@ export default function Lannding() {
         spaceBetween={30}
         effect={'fade'}
         navigation={true}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: 'true', bulletColor: '#92e3ef', bulletActiveColor: '#4396A2' }} 
         modules={[EffectFade, Navigation, Pagination]}
         className="mySwiper w-full h-[35vh] mt-4 lg:mt-0 lg:h-[100vh]"
       >
