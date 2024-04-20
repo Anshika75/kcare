@@ -15,12 +15,57 @@ const servicesData = [
     {
         name: "Women / Child Ward",
         hindiName: "महिला / बाल वार्ड",
-        iconClass: "fa-solid fa-baby"
+        iconClass: "fa-solid fa-venus"
+    },
+    {
+        name: "C.C.U",
+        hindiName: "सी.सी.यू.",
+        iconClass: "fa-solid fa-heartbeat"
     },
     {
         name: "State of the Art ICU (Surgical / Medical)",
         hindiName: "अत्याधुनिक आई.सी.यू. (सर्जिकल / मेडिकल)",
         iconClass: "fa-solid fa-procedures"
+    },
+    {
+        name: "Computerized Lab",
+        hindiName: "कम्प्यूटरीकृत पैथोलॉजी",
+        iconClass: "fa-solid fa-microscope"
+    },
+    {
+        name: "Radiology",
+        hindiName: "रेडियोलोजी",
+        iconClass: "fa-solid fa-x-ray"
+    },
+    {
+        name: "CT Scan",
+        hindiName: "सीटी स्कैन",
+        iconClass: "fa-solid fa-x-ray"
+    },
+    {
+        name: "Trauma Care",
+        hindiName: "ट्रॉमा केयर",
+        iconClass: "fa-solid fa-hand-holding-medical"
+    },
+    {
+        name: "Vaccination Centre",
+        hindiName: "टीकाकरण सेंटर",
+        iconClass: "fa-solid fa-syringe"
+    },
+    {
+        name: "State of the Art Cath Lab",
+        hindiName: "अत्याधुनिक कैथ लैब",
+        iconClass: "fa-solid fa-heartbeat"
+    },
+    {
+        name: "Wards & Suite Rooms with Oxygen Support",
+        hindiName: "वार्ड, प्राइवेट और सुइट रूम (ऑक्सीजन सुविधा के साथ)",
+        iconClass: "fa-solid fa-mask-ventilator"
+    },
+    {
+        name: "In – House Pharmacy",
+        hindiName: "इन-हाउस फार्मेसी",
+        iconClass: "fa-solid fa-prescription"
     },
 ];
 
@@ -32,15 +77,15 @@ export default function Services() {
                 <div className="absolute hidden md:block bottom-0 md:-bottom-10 lg:-bottom-20 w-full opacity-75">
                     <img className='object-cover' src={bg} alt="" />
                 </div>
-                <div className="flex flex-row flex-wrap mt-4 z-20 gap-x-5 gap-y-5">
+                <div className="flex flex-col items-center md:flex-row md:flex-wrap mt-4 z-20 gap-x-3 gap-y-5 justify-evenly">
                     {servicesData.map((service, index) => (
-                        <div key={index} className="box overflow-hidden bg-[#fff] shadow-md rounded-md relative flex flex-row items-center justify-center transition-all group hover:scale-[1.02] hover:shadow-xl cursor-pointer">
-                            <div className="w-12 h-12 md:h-16 md:w-16 lg:w-16 lg:h-16 rounded-br-full rounded-tr-full bg-[#4396A2] -ml-2 md:grid place-items-center text-[#fefefe] text-xl md:text-3xl group-hover:shadow-none">
+                        <div key={index} className="box overflow-hidden bg-[#fff] shadow-md w-full md:w-auto rounded-md relative flex flex-row items-center justify-center transition-all group hover:scale-[1.02] hover:shadow-xl cursor-pointer">
+                            <div className="w-12 h-12 md:h-16 md:w-16 lg:w-16 lg:h-16 rounded-br-full rounded-tr-full bg-[#4396A2] hidden -ml-2 lg:grid place-items-center text-[#fefefe] text-xl lg:text-3xl group-hover:shadow-none">
                                 <i className={`fa-solid ${service.iconClass}`}></i>
                             </div>
                             <div className="flex flex-col items-center justify-center p-2 lg:p-4">
-                                <h1 className='text-[#4396A2] figtree-semibold text-2xl md:text-3xl'>{service.name}</h1>
-                                <p className='text-[#333] popping-normal -mt-1 md:mt-0 text-xs md:text-xl'>{service.hindiName}</p>
+                                <h1 className='text-[#4396A2] figtree-semibold text-xs md:text-lg lg:text-3xl'>{service.name}</h1>
+                                <p className='text-[#333] popping-normal mt-1 md:mt-0 text-[0.6rem] md:text-xl'>{service.hindiName}</p>
                             </div>
                         </div>
                     ))}
