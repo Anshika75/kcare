@@ -1,7 +1,7 @@
 import React from 'react'
 import bg from '../assets/awards-bg.png'
 
-export default function Awards() {
+export default function Departments() {
   return (
     <>
         <div className="flex flex-col items-center relative w-full md:px-[50px] overflow-hidden px-[25px] py-8 md:pb-20 md:py-12 md:my-10 bg-[#fefefe]">
