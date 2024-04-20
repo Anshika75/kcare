@@ -6,6 +6,7 @@ import About from '../components/about'
 import Mission from '../components/mission'
 import Awards from '../components/awards'
 import Departments from '../components/departments'
+import Services from '../components/services'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Mission/>
       <Awards/>
       <Departments/>
+      <Services/>
     </div>
    </>
   )
