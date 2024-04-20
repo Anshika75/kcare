@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Landing from '../components/landing'
 import Stats from '../components/stats'
 import About from '../components/about'
+import Mission from '../components/mission'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Landing/>
       <Stats/>
       <About/>
+      <Mission/>
     </div>
    </>
   )
