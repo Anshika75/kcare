@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function mission() {
+export default function Mission() {
   return (
-    <div>mission</div>
+    <div>M</div>
   )
 }
