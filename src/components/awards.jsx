@@ -4,7 +4,7 @@ import bg from '../assets/awards-bg.png'
 export default function Awards() {
   return (
     <>
-        <div className="flex flex-col items-center relative w-full md:px-[50px] overflow-hidden px-[25px] py-8 md:pb-20 md:py-12 my-10 bg-[#4396a2]">
+        <div id="awards" className="flex flex-col items-center relative w-full md:px-[50px] overflow-hidden px-[25px] py-8 md:pb-20 md:py-12 my-10 bg-[#4396a2]">
         <h1 className='text-[#fefefe] figtree-semibold text-4xl md:mt-0 md:text-7xl mb-3 md:mb-6 relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-12 lg:after:w-24 after:bg-[#fefefe]'>Awards</h1>
         <div className="absolute hidden md:block bottom-0 md:-bottom-10 lg:-bottom-20 w-full opacity-75">
             <img className='object-cover' src={bg} alt="" />
