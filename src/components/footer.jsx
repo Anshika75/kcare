@@ -1,19 +1,6 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
-import { FaPhone } from "react-icons/fa6";
-import { IoLocation } from "react-icons/io5";
-import footerlogo from "../assets/logonav.png";
-import { Link } from "react-router-dom";
-import {
-  FaDribbbleSquare,
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaInstagram,
-  FaYoutube,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import footerlogo from "../assets/logo.png";
+
 
 const Footer = () => {
   return (
@@ -24,13 +11,12 @@ const Footer = () => {
           <p className="text-3xl font-oswald mt-3 text-[#091022]">DISCOVER OUR DYNAMIC TEAM</p>
         </div>
         <div>
-          <Link to="/team"
+          <a to="/team"
             type="submit"
             className="bg-[#091022] flex items-center justify-evenly text-white py-2 mt-3 rounded-tr-full w-[150px] hover:bg-[#121f2e]"
           >
-            View Team
-            <FaLongArrowAltRight />
-          </Link>
+            View Team &gt;
+          </a>
         </div>
       </div>
       <div className="bg-[#091022] lg:mt-[12%]">
@@ -50,12 +36,9 @@ const Footer = () => {
 
             </p>
             <div className="flex cursor-pointer my-8">
-              <a href="https://www.youtube.com/@CAC-Podcast"><FaYoutube size={30} className="mr-4" /></a>
-              <a href="https://www.instagram.com/cac.cuchd/"><FaInstagram size={30} className="mr-4" /></a>
-              <a href="https://www.linkedin.com/in/cac-cu-academic-competitions-a9b4932a0/"><FaLinkedin size={30} className="mr-4" /></a>
-              {/* <FaTwitterSquare size={30} className="mr-4" /> */}
-              {/* <FaGithubSquare size={30} className="mr-4" /> */}
-              {/* <FaDribbbleSquare size={30} /> */}
+              <a href="https://www.youtube.com/@CAC-Podcast"> <i className="mr-4 fa-solid fa-youtube"></i> </a>
+              <a href="https://www.instagram.com/cac.cuchd/"><i className="mr-4 fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/cac-cu-academic-competitions-a9b4932a0/"><i className="mr-4 fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0">
@@ -73,15 +56,11 @@ const Footer = () => {
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
             <h2 className="font-bold text-white font-oswald text-xl my-2">CONTACT</h2>
             <ul className="font-maven text-xl">
-              {/* <li className="py-3 text-sm flex items-center ">
-                <FaPhone className="mr-2 text-xl" />
-                (406) 555-0120
-              </li> */}
               <li className="py-3 text-sm flex items-center">
-                <IoMail className="mr-2 text-xl" /> support@cac-cuchd.in
+              <i className="fa-solid fa-envelope mr-2 text-xl"></i> support@cac-cuchd.in
               </li>
               <li className="py-3 text-sm flex items-center">
-                <IoLocation className="mr-2 text-xl" /> Chandigarh University,
+             <i className="mr-2 text-xl fa-solid fa-location-dot"></i> Chandigarh University,
                 NH-5 <br /> Chandigarh-Ludhiana Highway
               </li>
             </ul>

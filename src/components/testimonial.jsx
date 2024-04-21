@@ -19,7 +19,6 @@ export default function Testimonial() {
                 <h1 className='text-[#fefefe] figtree-semibold text-4xl mt-6 md:mt-0 md:text-7xl mb-6 relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-16 lg:after:w-32 after:bg-[#fefefe]'>Testimonials</h1>
                 <Swiper
                     loop={true}
-                    loopFillGroupWithBlank={true}
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
