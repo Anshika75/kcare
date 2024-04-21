@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#sachievements"
+                href="#services"
                 className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Services
