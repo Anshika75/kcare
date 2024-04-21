@@ -1,5 +1,6 @@
 import React from 'react';
 import bg from '../assets/awards-bg.png';
+import org from '../assets/org.png';
 
 const servicesData = [
     {
@@ -58,14 +59,14 @@ const servicesData = [
         iconClass: "fa-solid fa-heartbeat"
     },
     {
-        name: "Wards & Suite Rooms with Oxygen Support",
-        hindiName: "वार्ड, प्राइवेट और सुइट रूम (ऑक्सीजन सुविधा के साथ)",
-        iconClass: "fa-solid fa-mask-ventilator"
-    },
-    {
         name: "In – House Pharmacy",
         hindiName: "इन-हाउस फार्मेसी",
         iconClass: "fa-solid fa-prescription"
+    },
+    {
+        name: "Wards & Suite Rooms with Oxygen Support",
+        hindiName: "वार्ड, प्राइवेट और सुइट रूम (ऑक्सीजन सुविधा के साथ)",
+        iconClass: "fa-solid fa-mask-ventilator"
     },
 ];
 
@@ -77,18 +78,20 @@ export default function Services() {
                 <div className="absolute hidden md:block bottom-0 md:-bottom-10 lg:-bottom-20 w-full opacity-75">
                     <img className='object-cover' src={bg} alt="" />
                 </div>
-                <div className="flex flex-col items-center md:flex-row md:flex-wrap mt-4 z-20 gap-x-3 gap-y-5 justify-evenly">
-                    {servicesData.map((service, index) => (
-                        <div key={index} className="box overflow-hidden bg-[#fff] shadow-md w-full md:w-auto rounded-md relative flex flex-row items-center justify-center transition-all group hover:scale-[1.02] hover:shadow-xl cursor-pointer">
-                            <div className="w-12 h-12 md:h-16 md:w-16 lg:w-16 lg:h-16 rounded-br-full rounded-tr-full bg-[#4396A2] hidden -ml-2 lg:grid place-items-center text-[#fefefe] text-xl lg:text-3xl group-hover:shadow-none">
-                                <i className={`fa-solid ${service.iconClass}`}></i>
+                <div className="flex items-center">
+                    <div className="flex flex-col items-center md:flex-row md:flex-wrap mt-4 z-20 gap-x-3 gap-y-5 ">
+                        {servicesData.map((service, index) => (
+                            <div key={index} className="box overflow-hidden bg-[#fff] shadow-md w-full md:w-auto rounded-md relative flex flex-row items-center justify-center transition-all group hover:scale-[1.02] hover:shadow-xl cursor-pointer">
+                                <div className="w-12 h-12 md:h-16 md:w-16 lg:w-16 lg:h-16 rounded-br-full rounded-tr-full bg-[#4396A2] hidden -ml-2 lg:grid place-items-center text-[#fefefe] text-xl lg:text-3xl group-hover:shadow-none">
+                                    <i className={`fa-solid ${service.iconClass}`}></i>
+                                </div>
+                                <div className="flex flex-col items-center justify-center p-2 lg:p-4">
+                                    <h1 className='text-[#4396A2] figtree-semibold text-xs md:text-lg lg:text-3xl'>{service.name}</h1>
+                                    <p className='text-[#333] popping-normal mt-1 md:mt-0 text-[0.6rem] md:text-xl'>{service.hindiName}</p>
+                                </div>
                             </div>
-                            <div className="flex flex-col items-center justify-center p-2 lg:p-4">
-                                <h1 className='text-[#4396A2] figtree-semibold text-xs md:text-lg lg:text-3xl'>{service.name}</h1>
-                                <p className='text-[#333] popping-normal mt-1 md:mt-0 text-[0.6rem] md:text-xl'>{service.hindiName}</p>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
