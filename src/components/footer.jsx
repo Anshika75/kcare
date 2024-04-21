@@ -3,70 +3,77 @@ import footerlogo from "../assets/logo.png";
 import services from "../assets/services.png";
 
 const Footer = () => {
-  return (
-    <div id={"contact"} className="relative w-full lg:mt-[7%]">
-      <div className="flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#E2012D] py-3 font-extrabold font-maven text-white -translate-y-3/4 left-[50%] -translate-x-1/2 min-h-[120px] justify-between lg:px-12 lg:items-center px-2">
-        <div className="">
-          <p className="text-3xl figtree-bold uppercase">Launching Soon</p>
-          <p className="text-3xl figtree-bold uppercase mt-1 text-[#091022]">free health checkup camps</p>
-        </div>
-        <div>
-         <img src={services} alt="" />
-        </div>
-      </div>
-      <div className="bg-[#091022]">
-        <div className="w-full px-3 mx-auto mt-60 lg:mt-0 py-12 pt-24 flex flex-col lg:flex-row gap-4 text-gray-300">
-          <div className="w-full lg:pl-8 lg:w-[60%]">
-            <h1 className="w-full text-3xl text-[#E2012D]">
-              <img
-                src={footerlogo}
-                alt=""
-                className="w-[25%] h-[10%px]"
-              />
-            </h1>
-            <p className="text-white text-[15px] font-maven mt-4 text-justify lg:mr-12">
-              "CAC - The Face of Chandigarh University", 
-              Public & Student Relations Community, CU <br/>
-              #Letspromotecu
+    return (
+        <div id={"contact"} className="relative w-full mt-20 lg:mt-[7%]">
+            <div className="hidden md:flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#fefefe] py-3 font-extrabold text-white md:-translate-y-[60%] left-[50%] -translate-x-1/2 top-0 min-h-[120px] justify-between lg:px-12 lg:items-center px-2 shadow-md">
+                <div>
+                    <p className="md:text-3xl figtree-bold uppercase text-[#333]">Launching Soon</p>
+                    <p className="md:text-3xl figtree-bold uppercase mt-1 text-[#4396A2]">free health checkup camps</p>
+                </div>
+                <div className=" lg:block hidden">
+                    <img className="h-32" src={services} alt="" />
+                </div>
+            </div>
+            <div className="bg-[#4396A2] md:pt-12">
+                <div className="w-full px-3 mx-auto lg:mt-0 py-12 lg:pt-24 flex flex-col md:flex-row gap-4 text-gray-300">
+                    <div className="w-full lg:pl-8 md:w-[50%] lg:w-[60%]">
+                        <h1 className="w-full text-3xl text-[#fefefe]">
+                            <img
+                                src={footerlogo}
+                                alt=""
+                                className="w-[25%] h-[10%px]"
+                            />
+                        </h1>
+                        <p className="text-[#fefefe] text-sm md:text-base poppins-normal mt-4 text-justify lg:mr-12">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, dicta! Quod animi rerum corporis accusamus quaerat dolor magnam iusto ducimus voluptate similique quae culpa, aut voluptas ipsum aliquid commodi voluptates?
 
-            </p>
-            <div className="flex cursor-pointer my-8">
-              <a href="https://www.youtube.com/@CAC-Podcast"> <i className="mr-4 fa-solid fa-youtube"></i> </a>
-              <a href="https://www.instagram.com/cac.cuchd/"><i className="mr-4 fa-brands fa-square-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/cac-cu-academic-competitions-a9b4932a0/"><i className="mr-4 fa-brands fa-linkedin"></i></a>
+                        </p>
+                        <div className="flex cursor-pointer mt-6 md:my-8">
+                            <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90 bg-[#fefefe] w-7 h-7 md:h-9 md:w-9 rounded-full">
+                                <i className="text-[#4396A2] md:text-xl fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90 bg-[#fefefe] w-7 h-7 md:h-9 md:w-9 rounded-full">
+                                <i className="text-[#4396A2] md:text-xl fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90 bg-[#fefefe] w-7 h-7 md:h-9 md:w-9 rounded-full">
+                                <i className="text-[#4396A2] md:text-xl fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90 bg-[#fefefe] w-7 h-7 md:h-9 md:w-9 rounded-full">
+                                <i className="text-[#4396A2] fa-solid fa-envelope md:text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-[20%] lg:w-[20%] lg:mb-0">
+                        <h1 className="font-bold text-[#fefefe] text-xl my-1 md:my-2 figtree-semibold">
+                            QUICK <span className="text-[#fefefe]">LINKS</span>
+                        </h1>
+                        <div className="poppins-normal cursor-pointer flex flex-col justify-start items-start">
+                            <a href="/" className="py-1 md:py-2 text-sm transition-all hover:scale-90 text-[#fefefe]">HOME</a>
+                            <a href="#about" className="py-1 md:py-2 text-sm transition-all hover:scale-90 text-[#fefefe]">ABOUT</a>
+                            <a href="#sevents" className="py-1 md:py-2 text-sm transition-all hover:scale-90 text-[#fefefe]">EVENTS</a>
+                            <a href="#sachievements" className="py-1 md:py-2 text-sm transition-all hover:scale-90 text-[#fefefe]">ACHIEVERS</a>
+                            <a href="#partners" className="py-1 md:py-2 text-sm transition-all hover:scale-90 text-[#fefefe]">PARTNERS</a>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-[30%] lg:w-[20%] lg:mb-0 cursor-pointer">
+                        <h2 className="font-bold text-[#fefefe] figtree-semibold text-xl my-1 md:my-2">CONTACT</h2>
+                        <ul className="poppins-normal text-xl">
+                            <li className="py-1 md:py-3 text-sm flex items-center text-[#fefefe] ">
+                                <i className="text-[#fefefe] mr-2 fa-solid fa-phone text-base"></i> +91-799999-868686
+                            </li>
+                            <li className="py-1 md:py-3 text-sm flex items-center text-[#fefefe] ">
+                                <i className="mr-2 text-xl fa-solid fa-location-dot"></i> KCare Hospital, 16/111, Civil Lines
+                                <br /> Kanpur, Uttar Pradesh 208001
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="w-full bg-[#4396A2] py-4 text-center text-xs text-[#fefefe] poppins-normal border-t">
+                    &copy; KCARE HOSPITAL ALL RIGHT RESERVED
+                </div>
             </div>
-          </div>
-          <div className="w-full lg:w-[20%] mb-6 lg:mb-0">
-            <h1 className="font-bold text-white text-xl my-2 font-oswald">
-              QUICK <span className="text-[#E2102d]">LINKS</span>
-            </h1>
-            <div className="font-maven cursor-pointer flex flex-col justify-start items-start">
-              <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
-              <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
-              <a href="#sevents" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
-              <a href="#sachievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
-              <a href="#partners" className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</a>
-            </div>
-          </div>
-          <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
-            <h2 className="font-bold text-white font-oswald text-xl my-2">CONTACT</h2>
-            <ul className="font-maven text-xl">
-              <li className="py-3 text-sm flex items-center">
-              <i className="fa-solid fa-envelope mr-2 text-xl"></i> support@cac-cuchd.in
-              </li>
-              <li className="py-3 text-sm flex items-center">
-             <i className="mr-2 text-xl fa-solid fa-location-dot"></i> Chandigarh University,
-                NH-5 <br /> Chandigarh-Ludhiana Highway
-              </li>
-            </ul>
-          </div>
         </div>
-        <div className="w-full bg-[#E2012D] py-4 text-center text-white">
-          COPYRIGHT CAC. ALL RIGHT RESERVED
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Footer;
