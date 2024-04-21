@@ -15,6 +15,8 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 export default function Testimonial() {
     return (
         <>
+            <div className="flex flex-col items-center w-full md:px-[50px] md:pb-[50px] px-[25px] pb-[25px] md:my-10">
+            <h1 className='text-[#4396A2] figtree-semibold text-4xl mt-6 md:mt-0 md:text-7xl mb-6 relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-16 lg:after:w-32 after:bg-[#4396A2]'>Testimonials</h1>
             <Swiper
                 loop={true}
                 loopFillGroupWithBlank={true}
@@ -75,6 +77,7 @@ export default function Testimonial() {
                     <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
                 </SwiperSlide>
             </Swiper>
+            </div>
         </>
     );
 }
