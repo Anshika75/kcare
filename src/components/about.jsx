@@ -4,7 +4,7 @@ import doctor from '../assets/doctors.png'
 export default function About() {
     return (
         <>
-            <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-around w-full items-center px-[25px] md:px-[50px] md:my-10">
+            <div id="about" className="flex flex-col-reverse lg:flex-row justify-center lg:justify-around w-full items-center px-[25px] md:px-[50px] md:my-10">
                 <img className='mt-6 lg:mt-0 w-full md:hidden lg:block lg:w-[400px]' src={doctor} alt="" />
                 <div className="flex flex-col items-center lg:items-start lg:w-1/2">
                     <h1 className='text-[#4396A2] figtree-semibold text-4xl mt-6 md:mt-0 md:text-7xl mb-6 relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-16 lg:after:w-32 after:bg-[#4396A2]'>About Us</h1>
