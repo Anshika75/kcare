@@ -28,6 +28,7 @@ export default function Lannding() {
         pagination={{ clickable: 'true', bulletColor: '#92e3ef', bulletActiveColor: '#4396A2' }} 
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         className="mySwiper w-full h-[35vh] mt-4 lg:mt-0 lg:h-[120vh]"
+        id='home'
       >
         <SwiperSlide>
           <img className='lg:object-cover w-full h-[35vh] lg:h-[120vh]' src={home_banner}/>

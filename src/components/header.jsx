@@ -40,7 +40,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#sevents"
+                href="#dept"
                 className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Departments
@@ -56,7 +56,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#partner"
+                href="#contact"
                 className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Contacts
