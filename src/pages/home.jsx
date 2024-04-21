@@ -10,6 +10,7 @@ import Services from '../components/services'
 import Testimonial from '../components/testimonial'
 import Team from '../components/team'
 import Sponsors from '../components/sponsors'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Team/>
       <Testimonial/>
       <Sponsors/>
+      <Footer/>
     </div>
    </>
   )
