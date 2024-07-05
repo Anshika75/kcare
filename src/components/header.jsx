@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#fefefe] fixed  z-40 shadow-md w-full text-[#4396A2] poppins-medium p-2 lg:p-5 px-[25px] lg:px-[50px]">
+    <header className="bg-[#fefefe] fixed  z-40 shadow-md w-full text-[#0D5094] poppins-medium p-2 lg:p-5 px-[25px] lg:px-[50px]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
@@ -16,7 +16,7 @@ const Header = () => {
             <img
               src={logo}
               alt=""
-              className=" h-6 lg:h-8"
+              className=" h-6 lg:h-10"
             />
           </a>
         </div>
@@ -25,7 +25,7 @@ const Header = () => {
             <li>
               <a
                 href="#home"
-                className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
+                className="p-3 mr-4 uppercase hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Home
               </a>
@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <a
                 href="#about"
-                className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
+                className="p-3 mr-4 uppercase hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 About
               </a>
@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <a
                 href="#dept"
-                className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
+                className="p-3 mr-4 uppercase hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Departments
               </a>
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <a
                 href="#services"
-                className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
+                className="p-3 mr-4 uppercase hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Services
               </a>
@@ -57,7 +57,7 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                className="p-3 mr-4 uppercase hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer"
+                className="p-3 mr-4 uppercase hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer"
               >
                 Contacts
               </a>
@@ -93,9 +93,9 @@ const Header = () => {
 
       {/* Mobile navigation menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden py-4 space-y-4 text-xl mt-3 w-full text-[#4396A2]">
+        <div className="lg:hidden py-4 space-y-4 text-xl mt-3 w-full text-[#0D5094]">
         <ul className="w-full">
-            <li className="w-full hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
+            <li className="w-full hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
               <a
                 href="#home"
                 className="uppercase"
@@ -103,7 +103,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li className="w-full hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
+            <li className="w-full hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
               <a
                 href="#about"
                 className="uppercase"
@@ -111,7 +111,7 @@ const Header = () => {
                 About
               </a>
             </li>
-            <li className="w-full hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
+            <li className="w-full hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
               <a
                 href="#sevents"
                 className="uppercase"
@@ -119,7 +119,7 @@ const Header = () => {
                 Departments
               </a>
             </li>
-            <li className="w-full hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
+            <li className="w-full hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
               <a
                 href="#sachievements"
                 className="uppercase"
@@ -127,7 +127,7 @@ const Header = () => {
                 Services
               </a>
             </li>
-            <li className="w-full hover:bg-[#4396A2] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
+            <li className="w-full hover:bg-[#0D5094] hover:text-[#fefefe] transition-all cursor-pointer my-2 p-2">
               <a
                 href="#partner"
                 className="uppercase"
