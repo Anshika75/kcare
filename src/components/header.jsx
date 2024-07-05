@@ -68,16 +68,16 @@ const Header = () => {
         {/* Login button for laptop/desktop */}
         <div className="hidden lg:flex items-center justify-center text-2xl">
           <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90">
-            <i className="fa-brands fa-square-instagram"></i>
+            <i className="fa-brands text-[#DE2225] fa-square-instagram"></i>
           </a>
           <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90">
-            <i className="fa-brands fa-square-facebook"></i>
+            <i className="fa-brands text-[#DE2225] fa-square-facebook"></i>
           </a>
           <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90">
-            <i className="fa-brands fa-youtube"></i>
+            <i className="fa-brands text-[#DE2225] fa-youtube"></i>
           </a>
           <a href="" className="grid place-items-center mx-2 transition-all hover:scale-90">
-            <i className="fa-solid fa-phone text-xl"></i>
+            <i className="fa-solid text-[#DE2225] fa-phone text-xl"></i>
           </a>
         </div>
 
