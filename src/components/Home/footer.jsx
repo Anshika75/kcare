@@ -1,10 +1,11 @@
 import React from "react";
-import footerlogo from "../assets/logo.png";
-import services from "../assets/services.png";
+import footerlogo from "../../assets/logo.png";
+import services from "../../assets/services.png";
 
 const Footer = () => {
     return (
-        <div id="contact" className="relative w-full mt-20 lg:mt-[7%]">
+        <>
+            <div id="contact" className="relative w-full mt-20 lg:mt-[7%]">
             <div className="hidden md:flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#fefefe] py-3 font-extrabold text-white md:-translate-y-[60%] left-[50%] -translate-x-1/2 top-0 min-h-[120px] justify-between lg:px-12 lg:items-center px-2 shadow-md">
                 <div>
                     <p className="md:text-3xl figtree-bold uppercase text-[#333]">Launching Soon</p>
@@ -73,6 +74,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

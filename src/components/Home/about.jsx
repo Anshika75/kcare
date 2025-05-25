@@ -1,5 +1,5 @@
 import React from 'react'
-import doctor from '../assets/doctors.png'
+import doctor from '../../assets/doctors.png'
 
 export default function About() {
     return (

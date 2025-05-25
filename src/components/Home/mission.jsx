@@ -1,6 +1,6 @@
 import React from 'react'
-import mission_graphic from '../assets/mission_graphic.png'
-import vission_graphic from '../assets/vission_graphic.png'
+import mission_graphic from '../../assets/mission_graphic.png'
+import vission_graphic from '../../assets/vission_graphic.png'
 
 export default function Mission() {
     return (

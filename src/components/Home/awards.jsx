@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../assets/awards-bg.png'
+import bg from '../../assets/awards-bg.png'
 
 export default function Awards() {
   return (

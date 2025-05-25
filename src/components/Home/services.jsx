@@ -1,4 +1,4 @@
-import bg from "../assets/awards-bg.png"
+import bg from "../../assets/awards-bg.png"
 
 const servicesData = [
   {
